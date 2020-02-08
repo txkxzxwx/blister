@@ -437,6 +437,9 @@ footer {
   display: block;
   padding: 30px;
   text-align: center;
+  p {
+    color: whitesmoke;
+  }
 }
 
 .clearfix::after {
