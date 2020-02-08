@@ -27,14 +27,6 @@
         <h1 class="grid-6"><a href="/">blister</a></h1>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
-            <span><%= current_user.nickname %>
-              <ul class="user__info">
-                <li>
-                  <%= link_to "マイページ", "/users/#{current_user.id}" %>
-                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-                </li>
-              </ul>
-            </span>
             <%= link_to  "投稿する", "/tweets/new", class: "post" %>
           </div>
         <% else %>
@@ -45,11 +37,49 @@
         <% end %>
       </div>
     </header>
-    <div class="sidebar">
-      <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
-        <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
-        <%= form.submit "検索", class: "search-btn" %>
-      <% end %>
+    <div class="side">
+      <div class="serch">
+        <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
+          <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+          <%= form.submit "検索", class: "search-btn" %>
+        <% end %>
+      </div>
+      <div class="sidebar">
+        <% if user_signed_in? %>
+        <div class="profile">
+          <div class="profile-img">
+            <img src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png">
+          </div>
+          <div class="profile-name">
+            <span><%= current_user.nickname %>
+              <ul class="user__info">
+                <li>
+                  <%= link_to "マイページ", "/users/#{current_user.id}" %>
+                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                </li>
+              </ul>
+            </span>
+            <% end %>
+          </div>
+        </div>
+        <div class="tag">
+          <%= link_to "#zorlac", "/" %>
+          <%= link_to "#pushead", "/" %>
+          <%= link_to "#buttstain", "/" %>
+          <%= link_to "#life's a beach", "/" %>
+          <%= link_to "#santacruz", "/" %>
+          <%= link_to "#powell", "/" %>
+          <%= link_to "#vans", "/" %>
+          <%= link_to "#starwars", "/" %>
+          <%= link_to "#toxic crusaders", "/" %>
+          <%= link_to "#my pet monster", "/" %>
+          <%= link_to "#killer tomato", "/" %>
+          <%= link_to "#ojaga design", "/" %>
+          <%= link_to "#virgo", "/" %>
+          <%= link_to "#hex antistyle", "/" %>
+        </div>
+      </div>
+      
     </div>
 
     <%= yield %>
