@@ -359,10 +359,10 @@ footer {
 .sidebar{
   width: 290px;
   height: 500px;
-  float: right;
+  // float: right;
   background-color: rgb(19, 18, 18);
   border-radius: 30px;
-  display: flex;
+  // display: flex;
   justify-content: space-evenly;
 }
 
@@ -373,12 +373,16 @@ footer {
 .profile {
   color: white;
   padding-top: 10px;
+  border-bottom: yellow dotted 1px ;
+  display: flex;
+  height: 120px;
 }
 
 .profile-img {
   width: 100px;
   height: 100px;
   border-radius: 30px;
+  display: block;
 }
 
 .profile-name {
@@ -427,7 +431,13 @@ footer {
   }
 }
 
-
+.tag {
+  width: 100%;
+  height: calc(100% - 120px);
+  display: block;
+  padding: 30px;
+  text-align: center;
+}
 
 .clearfix::after {
   content: "";

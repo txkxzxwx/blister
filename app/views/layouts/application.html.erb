@@ -47,11 +47,10 @@
       <div class="sidebar">
         <% if user_signed_in? %>
         <div class="profile">
-          <img class="profile-img" src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png">
-
+          <div class="profile-img">
+            <img src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png">
           </div>
           <div class="profile-name">
-            
             <span><%= current_user.nickname %>
               <ul class="user__info">
                 <li>
@@ -61,8 +60,23 @@
               </ul>
             </span>
             <% end %>
-
           </div>
+        </div>
+        <div class="tag">
+          <%= link_to "#zorlac", "/" %>
+          <%= link_to "#pushead", "/" %>
+          <%= link_to "#buttstain", "/" %>
+          <%= link_to "#life's a beach", "/" %>
+          <%= link_to "#santacruz", "/" %>
+          <%= link_to "#powell", "/" %>
+          <%= link_to "#vans", "/" %>
+          <%= link_to "#starwars", "/" %>
+          <%= link_to "#toxic crusaders", "/" %>
+          <%= link_to "#my pet monster", "/" %>
+          <%= link_to "#killer tomato", "/" %>
+          <%= link_to "#ojaga design", "/" %>
+          <%= link_to "#virgo", "/" %>
+          <%= link_to "#hex antistyle", "/" %>
         </div>
       </div>
       
