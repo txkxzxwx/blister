@@ -150,50 +150,8 @@ header.header {
       }
     }
   }
-  .user_nav {
-    position: relative;
-    height: 100px;
-    right: 0;
-    span {
-      top: 5px;
-      display: block;
-      float: left;
-      margin-left: 30px;
-      width: 150px;
-      height: 50px;
-      font-size: 1em;
-      cursor: pointer;
-      position: relative;
-      &:after {
-        content: '▼';
-        font-size: .7em;
-        margin-left: -4px;
-      }
-      &:hover ul {
-        color: $accent;
-        display: block;
-      }
-    }
-    ul {
-      display: none;
-      position: absolute;
-      top: 46px;
-      right: 0;
-      border-left: 1px solid #d8d8d8;
-      border-right: 1px solid #d8d8d8;
-      box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
-      li {
-        background-color: #f0f0f0;
-        a {
-          display: block;
-          padding: 10px 20px;
-          text-align: left;
-          border-bottom: 1px solid #d8d8d8;
-        }
-      }
-     }
-  }
 }
+
 .form {
   background: url(https://dl.dropboxusercontent.com/u/5840617/DeathtoStock_Wired3.jpg);
   background-size: cover;
@@ -426,6 +384,47 @@ footer {
 .profile-name {
   font-size: 20px;
   line-height: 110px;
+  position: relative;
+  height: 100px;
+  right: 0;
+  span {
+    top: 5px;
+    display: block;
+    float: left;
+    margin-left: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: '▼';
+      font-size: .7em;
+      margin-left: -4px;
+    }
+    &:hover ul {
+      color: $accent;
+      display: block;
+    }
+  }
+  ul {
+    display: none;
+    position: absolute;
+    top: 46px;
+    right: 0;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+    li {
+      background-color: #f0f0f0;
+      a {
+        display: block;
+        padding: 10px 20px;
+        text-align: left;
+        border-bottom: 1px solid #d8d8d8;
+      }
+    }
+  }
 }
 
 
