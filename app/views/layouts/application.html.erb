@@ -32,12 +32,9 @@
         <h1 class="grid-6"><a href="/">blister</a></h1>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
-            <%= link_to  "投稿する", "/tweets/new", class: "post" %>
-          </div>
-        <% else %>
-          <div class="grid-6">
-            <%= link_to "ログイン", new_user_session_path, class: 'post' %>
-            <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+            <a href="/tweets/new">
+              <span class="fas fa-image fa-2x"></span>
+            </a>
           </div>
         <% end %>
       </div>

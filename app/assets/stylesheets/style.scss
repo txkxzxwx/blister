@@ -89,7 +89,7 @@ a {
 
 .btn {
     @include basePadding(8px 20px);
-    font-size: 14px;
+    font-size: 20px;
     border: 2px solid $accent;
     color: $accent;
     font-weight: bold;
@@ -391,7 +391,7 @@ footer {
   line-height: 90px;
   position: relative;
   height: 100px;
-  right: 0;
+  padding-left: 20px;
   span {
     top: 5px;
     display: block;
@@ -445,16 +445,11 @@ footer {
   text-align: center;
   p {
     color: whitesmoke;
+    margin-top: 0px;
   }
   a {
   margin: 5px;
   }
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
 }
 
 .icon-out {
@@ -469,3 +464,10 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
