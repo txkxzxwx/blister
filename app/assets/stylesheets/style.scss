@@ -341,14 +341,22 @@ footer {
 .search-form {
   text-align: center;
   padding-top: 32px;
+  position: relative;
   .search-input {
-    width: 70%;
-    margin-right: 10px;
+    width: 90%;
+    border-radius: 30px;
   }
+}
 
-  .search-btn {
-    width: 20%;
-  }
+.serch {
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+.fa-search {
+position: absolute;
+top: 153px;
+right: 77px;
 }
 
 .side {
@@ -364,10 +372,6 @@ footer {
   border-radius: 30px;
   // display: flex;
   justify-content: space-evenly;
-}
-
-.serch {
-  margin-bottom: 30px;
 }
 
 .profile {
@@ -457,7 +461,7 @@ footer {
   justify-content: space-evenly;
   height: 120px;
   line-height: 120px;
-  color: white;
+  color: whitesmoke;
 }
 
 .icon-in {
@@ -470,4 +474,3 @@ footer {
   clear: both;
   display: block;
 }
-
