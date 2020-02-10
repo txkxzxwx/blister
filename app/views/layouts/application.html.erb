@@ -78,7 +78,7 @@
             <%= link_to "#virgo", "/" %>
             <%= link_to "#hex antistyle", "/" %>
           </div>
-            <div class="icon">
+            <div class="icon-in">
               <div class="facebook">
                 <%= link_to "https://www.facebook.com/" do %>
                 <span class="fab fa-facebook-square"></span>
@@ -100,6 +100,16 @@
               </div>
             </div>
         <% else %>
+          <div class="icon-out">
+            <div class="sign-in">
+              <%= link_to "Sign In", new_user_session_path, class: 'post' %>
+              <span class="fas fa-sign-in-alt fa-2x"></span>
+            </div>
+            <div class="sign-up">
+              <%= link_to "Sign-up", new_user_registration_path, class: 'post' %>
+              <span class="fas fa-user-plus fa-2x"></span>
+            </div>
+          </div>
           <div class="tag">
             <%= link_to "#zorlac", "/" %>
             <%= link_to "#pushead", "/" %>

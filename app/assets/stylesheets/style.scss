@@ -446,6 +446,9 @@ footer {
   p {
     color: whitesmoke;
   }
+  a {
+  margin: 5px;
+  }
 }
 
 .clearfix::after {
@@ -454,7 +457,15 @@ footer {
   display: block;
 }
 
-.icon {
+.icon-out {
+  display: flex;
+  justify-content: space-evenly;
+  height: 120px;
+  line-height: 120px;
+  color: white;
+}
+
+.icon-in {
   display: flex;
   justify-content: space-evenly;
 }
