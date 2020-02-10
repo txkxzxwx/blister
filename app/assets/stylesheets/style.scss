@@ -89,7 +89,7 @@ a {
 
 .btn {
     @include basePadding(8px 20px);
-    font-size: 14px;
+    font-size: 20px;
     border: 2px solid $accent;
     color: $accent;
     font-weight: bold;
@@ -379,8 +379,8 @@ footer {
 }
 
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 30px;
   display: block;
   line-height: 90px;
@@ -391,7 +391,7 @@ footer {
   line-height: 90px;
   position: relative;
   height: 100px;
-  right: 0;
+  padding-left: 20px;
   span {
     top: 5px;
     display: block;
@@ -430,25 +430,39 @@ footer {
   // }
 }
 
-.profile-box {
-}
 
-.sign-out {
-  display: block;
-  float: right;
-  height: 10px;
-  margin: 10px 20px 0 0;
-}
+// .sign-out {
+//   display: block;
+//   height: 10px;
+//   margin: 10px 20px 0 0;
+// }
 
 .tag {
   width: 100%;
-  height: calc(100% - 120px);
+  height: calc(100% - 120px - 40px);
   display: block;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   p {
     color: whitesmoke;
+    margin-top: 0px;
   }
+  a {
+  margin: 5px;
+  }
+}
+
+.icon-out {
+  display: flex;
+  justify-content: space-evenly;
+  height: 120px;
+  line-height: 120px;
+  color: white;
+}
+
+.icon-in {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .clearfix::after {
@@ -457,5 +471,3 @@ footer {
   display: block;
 }
 
-.far {
-}
