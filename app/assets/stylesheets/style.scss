@@ -379,8 +379,8 @@ footer {
 }
 
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 30px;
   display: block;
   line-height: 90px;
@@ -430,21 +430,18 @@ footer {
   // }
 }
 
-.profile-box {
-}
 
-.sign-out {
-  display: block;
-  float: right;
-  height: 10px;
-  margin: 10px 20px 0 0;
-}
+// .sign-out {
+//   display: block;
+//   height: 10px;
+//   margin: 10px 20px 0 0;
+// }
 
 .tag {
   width: 100%;
-  height: calc(100% - 120px);
+  height: calc(100% - 120px - 40px);
   display: block;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   p {
     color: whitesmoke;
@@ -457,5 +454,7 @@ footer {
   display: block;
 }
 
-.far {
+.icon {
+  display: flex;
+  justify-content: space-evenly;
 }
