@@ -52,15 +52,12 @@
               <img src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png">
             </div>
             <div class="profile-name">
-              <span><%= current_user.nickname %>
-                <ul class="user__info">
-                  <li>
-                    <%= link_to "マイページ", "/users/#{current_user.id}" %>
-                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-                  </li>
-                </ul>
-              </span>
+              <span><%= current_user.nickname %></span>
             </div>
+            <div class="sign-out">
+              <%= link_to  "", "/tweets/edit" %>
+              　<span class="fas fa-sign-out-alt"></span>
+            </div> 
           </div>
           <div class="tag">
             <p>favorite</p>
