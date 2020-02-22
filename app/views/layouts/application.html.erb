@@ -44,8 +44,9 @@
         <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
           <%= form.text_field :keyword, placeholder: "Type Keyword", class: "search-input" %>
         <% end %>
-        <%= link_to "", new_user_registration_path, class: 'serch-btn' %>
+        <%= link_to new_user_registration_path, class: 'serch-btn' do %>
         <span class="fas fa-search"></span>
+        <% end %>
       </div>
       <div class="sidebar">
         <% if user_signed_in? %>
@@ -56,7 +57,7 @@
               <img src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png">
             </div>
             <div class="profile-name">
-              <span><%= current_user.nickname %></span>
+              <%= link_to current_user.nickname, user_path(current_user), class: "profile-name__user" %>
             </div>
           </div>
           <div class="tag">
@@ -93,8 +94,9 @@
                 <% end %>
               </div>
               <div class="sign-out">
-                <%= link_to ".", destroy_user_session_path, method: :delete %>
+                <%= link_to destroy_user_session_path, method: :delete do %>
                 <span class="fas fa-sign-out-alt"></span>
+                <% end %>
               </div>
             </div>
         <% else %>
@@ -133,10 +135,6 @@
 
     <%= yield %>
 
-    <footer>
-      <p>
-        Copyright blister 2020.
-      </p>
-    </footer>
+    ø
   </body>
 </html>
