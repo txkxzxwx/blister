@@ -102,12 +102,14 @@
         <% else %>
           <div class="icon-out">
             <div class="sign-in">
-              <%= link_to "Sign In", new_user_session_path, class: 'post' %>
+              <%= link_to new_user_session_path, class: 'post' do %>
               <span class="fas fa-sign-in-alt fa-2x"></span>
+                <% end %>
             </div>
             <div class="sign-up">
-              <%= link_to "Sign-up", new_user_registration_path, class: 'post' %>
+              <%= link_to new_user_registration_path, class: 'post' do %>
               <span class="fas fa-user-plus fa-2x"></span>
+                <% end %>
             </div>
           </div>
           <div class="tag">
