@@ -10,7 +10,16 @@ class TweetsController < ApplicationController
   end
 
   def create
-    Tweet.create(tweet_params)
+    @tweet = Tweet.new(tweet_params)
+      
+      if @tweet.save
+        
+        redirect_to root_path
+      else
+        render new_tweet_path
+      end
+      
+    
   end
 
   def destroy
