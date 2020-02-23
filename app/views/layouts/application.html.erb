@@ -54,7 +54,8 @@
           <div class="profile">
             <div class="profile-img">
             <%# <a href="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png" %>
-              <img src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png">
+              <%# <img src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png"> %>
+              <img src=<%= current_user.image %> class = "profile-img__icon"  width="80" height="80">
             </div>
             <div class="profile-name">
               <%= link_to current_user.nickname, user_path(current_user), class: "profile-name__user" %>

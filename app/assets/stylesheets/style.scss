@@ -169,7 +169,7 @@ header.header {
     right: 0;
   }
 }
-div.contents.row {
+.contents.row {
   margin-top: 30px;
   h2 {
     @include boxBase(20px 0, 0);
@@ -183,7 +183,7 @@ div.contents.row {
   .new_user{
   font-family: "游ゴシック", "YuGothic";
   }
-  div.content_post {
+  .content_post {
     @include boxBase(20px 0 ,30px);
     position: relative;
     height: 400px;
@@ -383,11 +383,14 @@ right: 77px;
 }
 
 .profile-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 30px;
   display: block;
   line-height: 90px;
+  width: 90px;
+  height: 90px;
+  &__icon {
+  border-radius: 7px;
+  margin-left: 26px;
+  }
 }
 
 .profile-name {
@@ -405,6 +408,7 @@ right: 77px;
     font-size: 1em;
     cursor: pointer;
     position: relative;
+    color: yellow;
     // &:after {
     //   font-size: .7em;
     //   margin-left: -4px;
@@ -435,11 +439,6 @@ right: 77px;
 }
 
 
-// .sign-out {
-//   display: block;
-//   height: 10px;
-//   margin: 10px 20px 0 0;
-// }
 
 .tag {
   width: 100%;
@@ -461,7 +460,12 @@ right: 77px;
   justify-content: space-evenly;
   height: 120px;
   line-height: 120px;
-  color: whitesmoke;
+  .fa-sign-in-alt {
+    color: whitesmoke;
+  }
+  .fa-user-plus {
+    color: whitesmoke;
+  }
 }
 
 .icon-in {

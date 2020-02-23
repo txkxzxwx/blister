@@ -67,3 +67,6 @@ gem 'sprockets', '3.7.2'
 gem 'devise'
 gem "font-awesome-sass"
 gem "jquery-rails"
+gem 'carrierwave'
+gem 'mini_magick'
+
