@@ -24,6 +24,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
         type="text/javascript"></script>
+        
   </head>
 
   <body>
@@ -52,9 +53,9 @@
         <% if user_signed_in? %>
           <div class="profile">
             <div class="profile-img">
-            <a href="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png"
-              data-lightbox="profile" data-title="プロフィール">
-              <img src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png">
+            <%# <a href="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png" %>
+              <%# <img src="https://rentry.jp/note/wp-content/uploads/2018/10/smartphone_happy_tereru_man.png"> %>
+              <img src=<%= current_user.image %> class = "profile-img__icon"  width="80" height="80">
             </div>
             <div class="profile-name">
               <%= link_to current_user.nickname, user_path(current_user), class: "profile-name__user" %>
@@ -102,12 +103,14 @@
         <% else %>
           <div class="icon-out">
             <div class="sign-in">
-              <%= link_to "Sign In", new_user_session_path, class: 'post' %>
+              <%= link_to new_user_session_path, class: 'post' do %>
               <span class="fas fa-sign-in-alt fa-2x"></span>
+                <% end %>
             </div>
             <div class="sign-up">
-              <%= link_to "Sign-up", new_user_registration_path, class: 'post' %>
+              <%= link_to new_user_registration_path, class: 'post' do %>
               <span class="fas fa-user-plus fa-2x"></span>
+                <% end %>
             </div>
           </div>
           <div class="tag">
@@ -135,6 +138,6 @@
 
     <%= yield %>
 
-    ø
+    
   </body>
 </html>
