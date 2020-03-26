@@ -1,96 +1,47 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-# blister
- 
-"Physics_Sim_Py" is a tutorial of physics simulations with Python.
+"blister" is a image contribution browsing for collector with Ruby.
  
 # DEMO
  
-You can learn how to making cute physics simulations (looks retro game).
+You can show your collection and communicate with collector of the world .
  
-![](https://cpp-learning.com/wp-content/uploads/2019/05/pyxel-190505-161951.gif)
- 
-This animation is a "Cat playing on trampoline"!
-You can get basic skills for making physics simulations.
+[![Image from Gyazo](https://i.gyazo.com/0a24bfe2784bddf18978f69d0d4f889b.gif)](https://gyazo.com/0a24bfe2784bddf18978f69d0d4f889b)
  
 # Features
- 
-Physics_Sim_Py used [pyxel](https://github.com/kitao/pyxel) only.
- 
-```python
-import pyxel
-```
-[Pyxel](https://github.com/kitao/pyxel) is a retro game engine for Python.
-You can feel free to enjoy making pixel art style physics simulations.
+Post image
+
+Search function
+[![Image from Gyazo](https://i.gyazo.com/623580da248e7077f94142354bf1d608.gif)](https://gyazo.com/623580da248e7077f94142354bf1d608)
+
+comment function
+[![Image from Gyazo](https://i.gyazo.com/50571782312c36cf628b40953ed59cb0.gif)](https://gyazo.com/50571782312c36cf628b40953ed59cb0)
  
 # Requirement
  
-* Python 3.6.5
-* pyxel 1.0.2
- 
-Environments under [Anaconda for Windows](https://www.anaconda.com/distribution/) is tested.
- 
-```bash
-conda create -n pyxel pip python=3.6 Anaconda
-activate pyxel
-```
- 
-# Installation
- 
-Install Pyxel with pip command.
- 
-```bash
-pip install pyxel
-```
- 
+* ruby 2.5.1
+
 # Usage
  
-Please create python code named "demo.py".
-And copy &amp; paste [Day4 tutorial code](https://cpp-learning.com/pyxel_physical_sim4/).
- 
-Run "demo.py"
- 
-```bash
-python demo.py
-```
- 
-# Note
- 
-I don't test environments under Linux and Mac.
- 
-# Author
- 
-* Hayabusa
-* R&D Center
-* Twitter : https://twitter.com/Cpp_Learning
- 
-# License
- 
-"Physics_Sim_Py" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
-Enjoy making cute physics simulations!
+http://52.194.103.116/
+
+test account
+  Email:test1@test.com
+  Password:00000000
  
 Thank you!
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|email|string|null: false|
+|encrypted_password|string|null: false|
+|iamge|text|null: false|
+
+## tweetsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|text|string|null: false|
+|image|text|null: false|
+|user_id|integer|null: false|
