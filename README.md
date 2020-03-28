@@ -1,5 +1,5 @@
 # README
-"blister"はコレクターによるコレクターの為の写真投稿サイトです。<br>
+"blister"はコレクターによるコレクターの為の写真投稿サイトです。<br><br>
 服やtoy、骨董品など世界中には様々な物のコレクターが存在しております。<br>
 そしてコレクターには以下の気持ちがあると考え本アプリを制作しました。<br>
 ・自分のコレクションを見て欲しい。<br>
@@ -37,7 +37,7 @@ test account
   Password:00000000
 
 # ERD
-![blister](https://user-images.githubusercontent.com/59860393/77816149-b1cc0580-7103-11ea-84d0-42003d0e8150.jpeg)
+![blister](https://user-images.githubusercontent.com/59860393/77816617-4d12aa00-7107-11ea-81ef-3da40ac2d64f.jpeg)
 
 # usersテーブル
 |Column|Type|Options|
